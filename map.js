@@ -3,19 +3,19 @@
 
 // Initial map
 
-var row_count = 4;
-var column_count = 4;
+var row_count = 16;
+var column_count = 16;
 var terrain = [
-    [[grass], [grass], [grass], [grass]],
-    [[grass], [grass], [grass, wood], [grass]],
-    [[grass], [grass, plain], [grass], [grass]],
-    [[grass], [grass], [grass], [grass]],
+    [[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass]],
+    [[grass], [grass], [grass, wood], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass]],
+    [[grass], [grass, plain], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass]],
+    [[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass]],
 ];
 var occupants = [
-    [undefined, undefined, undefined, undefined],
-    [undefined, key, undefined, undefined],
-    [undefined, undefined, cat_girl, undefined],
-    [undefined, undefined, undefined, undefined],
+    [undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined],
+    [undefined, key, undefined, undefined,undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined],
+    [undefined, undefined, cat_girl, undefined,undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined],
+    [undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined],
 ];
 var protagonist = {
     element: cat_girl,
