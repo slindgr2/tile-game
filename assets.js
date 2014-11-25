@@ -12,6 +12,7 @@ var block_z_height = 39/2;
 // Characters
 
 var cat_girl = document.getElementById('cat-girl');
+var enemy_bug = document.getElementById('enemy-bug');
 
 // Objects
 
