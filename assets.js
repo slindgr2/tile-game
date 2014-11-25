@@ -3,11 +3,11 @@
 
 // Tiles in general
 
-var tile_width = 101;
-var tile_height = 171;
+var tile_width = 101/2;
+var tile_height = 171/2;
 var block_width = tile_width;
-var block_y_height = 83;
-var block_z_height = 39;
+var block_y_height = 83/2;
+var block_z_height = 39/2;
 
 // Characters
 
