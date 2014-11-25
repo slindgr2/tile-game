@@ -39,12 +39,17 @@ var occupants = [
     [undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined],
     [undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined],
     [undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined],
-    [undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined],
+    [undefined, undefined, undefined, undefined,undefined, undefined, undefined, undefined,undefined, undefined, enemy_bug, undefined,undefined, undefined, undefined, undefined],
 ];
 var protagonist = {
     element: cat_girl,
     x: 2,
     y: 2,
+};
+var antagonist = {
+    element: enemy_bug,
+    x: 10,
+    y: 15,
 };
 
 // Map utilities
