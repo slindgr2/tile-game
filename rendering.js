@@ -88,7 +88,7 @@ render();
 
 // Panning the camera
 
-var maximum_pan_rate = 0.03;
+var maximum_pan_rate = 0.01;
 function pan() {
     var dx = protagonist.x - center_x;
     var dy = protagonist.y - center_y;
