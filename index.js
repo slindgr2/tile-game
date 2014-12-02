@@ -47,7 +47,7 @@ document.addEventListener('keydown', key_pressed_down);
             antagonist.x = antagonist.x + 1;
         }else{
             antagonist.x = antagonist.x - 1;
-    }
+    }}
     if (protagonist.y = antagonist.y) {
         antagonist.y = antagonist.y;
     }else{
@@ -55,7 +55,6 @@ document.addEventListener('keydown', key_pressed_down);
             antagonist.y = antagonist.y + 1;
         }else{
             antagonist.y = antagonist.y - 1;
-    }
+    }}
  occupants[antagonist.y][antagonist.x] = antagonist.element;
-}
 }
