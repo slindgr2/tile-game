@@ -40,12 +40,12 @@ document.addEventListener('keydown', key_pressed_down);
 
  function enemy_movement(){
     occupants[antagonist.x][antagonist.y] = undefined;
-        if (is_in_bounds(protagonist.x > antagonist.x)) {
+        if (protagonist.x > antagonist.x) {
             antagonist.x = antagonist.x + 1;
         }else{
             antagonist.x = antagonist.x - 1;
     }
-        if (is_in_bounds(protagonist.y > antagonist.y)) {
+        if (protagonist.y > antagonist.y) {
             antagonist.y = antagonist.y + 1;
         }else{
             antagonist.y = antagonist.y - 1;
