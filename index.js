@@ -30,6 +30,7 @@ function key_pressed_down(event) {
             protagonist.y = protagonist.y + 1;
         }
     }
+    enemy_movement();
     occupants[protagonist.y][protagonist.x] = protagonist.element;
     render();
 }
