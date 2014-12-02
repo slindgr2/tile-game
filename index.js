@@ -53,5 +53,5 @@ document.addEventListener('keydown', key_pressed_down);
  }
 occupants[antagonist.y][antagonist.x] = antagonist.element;
 render();
-}
+
 
