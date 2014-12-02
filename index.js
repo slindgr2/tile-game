@@ -39,7 +39,9 @@ document.addEventListener('keydown', key_pressed_down);
 
 function enemy_movement(){
     occupants[antagonist.x][antagonist.y] = undefined;
-if (is_in_bounds(antagonist.x + 1,antagonist.y)){
+if(event.keyCode === right_arrow_key){
+    if (is_in_bounds(antagonist.x + 1,antagonist.y)){
     antagonist.x = antagonist.x + 1;
     }
+}
 }
