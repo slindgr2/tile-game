@@ -31,15 +31,6 @@ function key_pressed_down(event) {
         }
     }
     
-    function enemy_movement(){
-    occupants[antagonist.x][antagonist.y] = undefined;
-if(event.keyCode === right_arrow_key){
-    if (is_in_bounds(antagonist.x + 1,antagonist.y)){
-    antagonist.x = antagonist.x + 1;
-    }
-}
-}
-
     enemy_movement();
     occupants[protagonist.y][protagonist.x] = protagonist.element;
     render();
@@ -47,3 +38,9 @@ if(event.keyCode === right_arrow_key){
 
 document.addEventListener('keydown', key_pressed_down);
 
+ function enemy_movement(){
+    occupants[antagonist.x][antagonist.y] = undefined;
+        if (is_in_bounds(antagonist.x + 1,antagonist.y)){
+    antagonist.x = antagonist.x + 1;
+    }
+}
