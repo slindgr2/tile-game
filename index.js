@@ -43,4 +43,3 @@ if (is_in_bounds(antagonist.x,antagonist.y)){
     antagonist.x = antagonist.x + 1;
     }
 }
-}
