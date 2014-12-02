@@ -50,8 +50,6 @@ document.addEventListener('keydown', key_pressed_down);
         }else{
             antagonist.y = antagonist.y - 1;
     }
- }
-occupants[antagonist.y][antagonist.x] = antagonist.element;
-render();
-
+ occupants[antagonist.y][antagonist.x] = antagonist.element;
+}
 
