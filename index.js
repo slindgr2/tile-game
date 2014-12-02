@@ -35,3 +35,11 @@ function key_pressed_down(event) {
 }
 
 document.addEventListener('keydown', key_pressed_down);
+
+function enemy_movement(){
+    occupants[antagonist.x][antagonist.y] = undefined;
+if (is_in_bounds(antagonist.x,antagonist.y)){
+    antagonist.x = antagonist.x + 1;
+    }
+}
+}
