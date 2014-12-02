@@ -43,4 +43,6 @@ document.addEventListener('keydown', key_pressed_down);
         if (is_in_bounds(antagonist.x + 1,antagonist.y)){
     antagonist.x = antagonist.x + 1;
     }
-}
+occupants[antagonist.y][antagonist.x] = antagonist.element;
+render();
+ }
