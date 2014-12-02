@@ -31,13 +31,13 @@ function key_pressed_down(event) {
         }
     }
 
-    enemy_movement();
+  
     occupants[protagonist.y][protagonist.x] = protagonist.element;
     render();
 }
 
 document.addEventListener('keydown', key_pressed_down);
-
+window.setInterval(enemy_movement,100);
 function enemy_movement(event) {
     occupants[antagonist.y][antagonist.x] = undefined;
     if (protagonist.x === antagonist.x) {
