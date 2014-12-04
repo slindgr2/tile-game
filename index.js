@@ -69,6 +69,7 @@ function respawn_on_collision(event){
             protagonist.y = 7;
             protagonist.x = 7;
             occupants[protagonist.y][protagonist.x] = protagonist.elemtent;
+            window.setTimeout(enemy_movement,3500)
     }
 }
     
