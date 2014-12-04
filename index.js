@@ -70,12 +70,12 @@ function respawn_on_collision(event){
             protagonist.x = 7;
             occupants[protagonist.y][protagonist.x] = protagonist.element;
             window.clearInterval(bugspeed);
-            window.setInterval(respawn_delay,3500);
+            window.setTimeout(respawn_delay,3500);
         }
     }
 }
 function respawn_delay(){
-    var bugspeed = window.setInterval(enemy_movement,450);
+    bugspeed = window.setInterval(enemy_movement,450);
 }    
     
 
