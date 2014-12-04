@@ -38,7 +38,7 @@ function key_pressed_down(event) {
 }
 
 document.addEventListener('keydown', key_pressed_down);
-window.setInterval(enemy_movement,450);
+var bugspeed = window.setInterval(enemy_movement,450);
 function enemy_movement(event) {
     occupants[antagonist.y][antagonist.x] = undefined;
     if (protagonist.x === antagonist.x) {
@@ -69,7 +69,10 @@ function respawn_on_collision(event){
             protagonist.y = 7;
             protagonist.x = 7;
             occupants[protagonist.y][protagonist.x] = protagonist.elemtent;
-            window.setTimeout(enemy_movement,3500)
+            render();
+            window.clearInterval(bugspeed);
+            window.setInterval(enemy_movement,3500);
+        )
     }
 }
     
