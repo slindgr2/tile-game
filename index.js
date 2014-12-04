@@ -37,7 +37,7 @@ function key_pressed_down(event) {
 }
 
 document.addEventListener('keydown', key_pressed_down);
-window.setInterval(enemy_movement,300);
+window.setInterval(enemy_movement,450);
 function enemy_movement(event) {
     occupants[antagonist.y][antagonist.x] = undefined;
     if (protagonist.x === antagonist.x) {
