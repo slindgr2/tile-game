@@ -75,7 +75,7 @@ function respawn_on_collision(event){
     }
 }
 function respawn_delay(){
-    window.setInterval(enemy_movement,450);
+    var bugspeed = window.setInterval(enemy_movement,450);
 }    
     
 
