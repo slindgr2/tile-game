@@ -65,10 +65,10 @@ function enemy_movement(event) {
 function respawn_on_collision(event){
     if (protagonist.y === antagonist.y){
         if (protagonist.x === antagonist.x){
-        occupants[protagonist.y][protagonist.x] = undefined;
-        protagonist.y = 7;
-        protagonist.x = 7;
-        occupants[protagonist.y][protagonist.x] = protagonist.elemtent;
+            occupants[protagonist.y][protagonist.x] = undefined;
+            protagonist.y = 7;
+            protagonist.x = 7;
+            occupants[protagonist.y][protagonist.x] = protagonist.elemtent;
     }
 }
     
