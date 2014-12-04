@@ -72,7 +72,7 @@ function respawn_on_collision(event){
             render();
             window.clearInterval(bugspeed);
             window.setInterval(enemy_movement,3500);
-        )
+        }
     }
 }
     
