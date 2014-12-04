@@ -34,6 +34,7 @@ function key_pressed_down(event) {
   
     occupants[protagonist.y][protagonist.x] = protagonist.element;
     render();
+    
 }
 
 document.addEventListener('keydown', key_pressed_down);
@@ -59,4 +60,14 @@ function enemy_movement(event) {
         }
     }
     occupants[antagonist.y][antagonist.x] = antagonist.element;
+    respawn_on_collision();
+}
+function respawn_on_collision(event){
+    if (protagonist.y === antagonist.y){
+        if (protagonist.x === antagonist.x){
+        occupants[protagonist.7][protagonist.7];
+    }
+}
+    
+    
 }
