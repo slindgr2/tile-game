@@ -89,6 +89,4 @@ function next_drop(event){
         }
     }
 }
-function add_enemy(event){
-    copy enemy_bug;
-}
+
