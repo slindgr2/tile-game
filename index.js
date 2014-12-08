@@ -85,5 +85,7 @@ function add_key(event){
         key.y = Math.random*15;
         key.x = Math.random*15;
         objects[key.y][key.x] = key.element;
+    }
+    }
 }
 
