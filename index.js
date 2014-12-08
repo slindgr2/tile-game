@@ -83,8 +83,8 @@ function add_key(event){
     if (protagonist.y === key.y){
         if (protagonist.x === key.x){
         objects[key.y][key.x] = undefined;
-        key.y = Math.ceil(Math.random(15);
-        key.x = Math.ceil(Math.random(15);
+        key.y = Math.ceil(Math.random(15));
+        key.x = Math.ceil(Math.random(15));
         objects[key.y][key.x] = key.element;
     }
     }
