@@ -88,7 +88,7 @@ function respawn_delay(){
 function add_key(event){
     if (protagonist.y === objective.y){
         if (protagonist.x === objective.x){
-        occupants[objective.y][objective.x] = undefined;
+        occupants[objective.y][objective.x] = protagonist.element;
         objective.y = Math.ceil(Math.random()*15);
         objective.x = Math.ceil(Math.random()*15);
         occupants[objective.y][objective.x] = objective.element;
