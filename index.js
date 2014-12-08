@@ -100,5 +100,6 @@ function add_key(event){
 function score_update(){
     s = s + 1;
     document.getElementById("score")= 'Score: '+s;
+}
 
 
