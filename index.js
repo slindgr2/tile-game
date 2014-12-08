@@ -92,7 +92,7 @@ function add_key(event){
         objective.y = number;
         objective.x = number;
         objects[objective.y][objective.x] = objective.element;
-        get_number()
+        get_number();
     }
     }
 }
