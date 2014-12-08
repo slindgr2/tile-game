@@ -18,7 +18,7 @@ var terrain = [
     [[grass], [grass, wood], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass]],
     [[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass]],
     [[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass, wood], [grass],[grass], [grass], [grass], [grass]],
-    [[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass, wood], [grass], [grass],[grass], [grass], [grass], [grass]],
+    [[grass], [grass], [grass], [grass],[grass], [grass, wood], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass]],
     [[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass]],
     [[grass, wood], [grass], [grass], [grass],[grass], [grass], [grass], [grass, wood],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass]],
     [[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass, wood]],
