@@ -34,7 +34,6 @@ function key_pressed_down(event) {
   
     occupants[protagonist.y][protagonist.x] = protagonist.element;
     render();
-    next_drop();
     
 }
 
@@ -79,14 +78,10 @@ function respawn_delay(){
     bugspeed = window.setInterval(enemy_movement,450);
 }    
     
-function next_drop(event){
-    if (protagonist.y === key.y){
-        if (protagonist.x === key.x){
-            objects[key.y][key.x] = undefined;
-            key.y = Math.random*15;
-            key.x = Math.random*15;
-            objects[key.y][key.x] = key.element;
-        }
-    }
+function add_key(event){
+    objects[key.y][key.x] = undefined;
+    key.y = Math.random*15;
+    key.x = Math.random*15;
+    objects[key.y][key.x] = key.element;
 }
 
