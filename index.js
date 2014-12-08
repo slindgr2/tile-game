@@ -75,7 +75,7 @@ function respawn_on_collision(event){
             occupants[protagonist.y][protagonist.x] = protagonist.element;
             window.clearInterval(bugspeed);
             window.setTimeout(respawn_delay,3500);
-            
+            number_of_lives();
         }
     }
 }
@@ -102,4 +102,7 @@ function score_update(){
     document.getElementById("score").innerHTML = 'Score: '+s;
 }
 
-
+function number_of_lives(){
+ l = l - 1;
+ document.getElementById("lives").innerHTML = 'Lives: '+l;
+ }
