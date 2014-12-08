@@ -92,6 +92,7 @@ function add_key(event){
         objective.y = Math.ceil(Math.random()*15);
         objective.x = Math.ceil(Math.random()*15);
         occupants[objective.y][objective.x] = objective.element;
+        render();
         s = s + 1;
     }
     }
