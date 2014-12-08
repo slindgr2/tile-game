@@ -78,11 +78,12 @@ function respawn_on_collision(event){
 function respawn_delay(){
     bugspeed = window.setInterval(enemy_movement,450);
 }    
+
 function get_number(){
     var number;
     number = Math.random() * 15;
     number = Math.ceil(number);
-}    
+    
 function add_key(event){
     if (protagonist.y === key.y){
         if (protagonist.x === key.x){
@@ -90,6 +91,7 @@ function add_key(event){
         key.y = number;
         key.x = number;
         objects[key.y][key.x] = key.element;
+        get_number()
     }
     }
 }
