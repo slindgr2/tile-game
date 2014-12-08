@@ -106,4 +106,7 @@ function score_update(){
 function number_of_lives(){
  l = l - 1;
  document.getElementById("lives").innerHTML = 'Lives: '+l;
+ if (l === 0){
+     alert('Game Over! You Suck!' <br> 'Score: '+s)
+ }
  }
