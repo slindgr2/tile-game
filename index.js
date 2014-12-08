@@ -88,10 +88,10 @@ function get_number(){
 function add_key(event){
     if (protagonist.y === objective.y){
         if (protagonist.x === objective.x){
-        objects[objective.y][objective.x] = undefined;
+        occupants[objective.y][objective.x] = undefined;
         objective.y = number;
         objective.x = number;
-        objects[objective.y][objective.x] = objective.element;
+        occupants[objective.y][objective.x] = objective.element;
         get_number();
     }
     }
