@@ -34,6 +34,7 @@ function key_pressed_down(event) {
   
     occupants[protagonist.y][protagonist.x] = protagonist.element;
     render();
+    add_key();
     
 }
 
