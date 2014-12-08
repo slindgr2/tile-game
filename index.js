@@ -74,7 +74,7 @@ function respawn_on_collision(event){
             protagonist.x = 7;
             occupants[protagonist.y][protagonist.x] = protagonist.element;
             window.clearInterval(bugspeed);
-            window.setTimeout(respawn_delay,1500);
+            window.setTimeout(respawn_delay,3500);
             
         }
     }
