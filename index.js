@@ -69,7 +69,7 @@ function enemy_movement(event) {
 function respawn_on_collision(event){
     if (protagonist.y === antagonist.y){
         if (protagonist.x === antagonist.x){
-            occupants[protagonist.y][protagonist.x] = undefined;
+            occupants[protagonist.y][protagonist.x] = antagonist;
             protagonist.y = 7;
             protagonist.x = 7;
             occupants[protagonist.y][protagonist.x] = protagonist.element;
@@ -92,7 +92,6 @@ function add_key(event){
         objective.y = Math.ceil(Math.random()*15);
         objective.x = Math.ceil(Math.random()*15);
         occupants[objective.y][objective.x] = objective.element;
-        render();
         s = s + 1;
     }
     }
