@@ -8,7 +8,7 @@ var up_arrow_key = 38;
 var right_arrow_key = 39;
 var down_arrow_key = 40;
 var s = 0;
-var l = 2
+var l = 3;
 
 function key_pressed_down(event) {
     occupants[protagonist.y][protagonist.x] = undefined;
