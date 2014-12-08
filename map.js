@@ -51,6 +51,12 @@ var antagonist = {
     x: 10,
     y: 15,
 };
+var objective = {
+    element: key,
+    x: 1,
+    y: 1,
+};
+
 
 // Map utilities
 
