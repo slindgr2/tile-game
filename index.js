@@ -83,6 +83,7 @@ function get_number(){
     var number;
     number = Math.random() * 15;
     number = Math.ceil(number);
+}
     
 function add_key(event){
     if (protagonist.y === key.y){
