@@ -91,7 +91,7 @@ function add_key(event){
         objects[objective.y][objective.x] = undefined;
         objective.y = number;
         objective.x = number;
-        objects[objective.y][objective.x] = key.element;
+        objects[objective.y][objective.x] = objective.element;
         get_number()
     }
     }
