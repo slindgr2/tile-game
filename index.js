@@ -78,20 +78,13 @@ function respawn_on_collision(event){
 function respawn_delay(){
     bugspeed = window.setInterval(enemy_movement,450);
 }    
-
-function get_number(){
-    var number;
-    number = Math.random() * 15;
-}
-    
 function add_key(event){
     if (protagonist.y === objective.y){
         if (protagonist.x === objective.x){
         occupants[objective.y][objective.x] = undefined;
-        objective.y = Math.ceil(number);
-        objective.x = Math.ceil(number);
+        objective.y = Math.ceil(Math.random()*15);
+        objective.x = Math.ceil(Math.random()*15);
         occupants[objective.y][objective.x] = objective.element;
-        get_number();
     }
     }
 }
