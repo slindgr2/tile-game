@@ -82,15 +82,14 @@ function respawn_delay(){
 function get_number(){
     var number;
     number = Math.random() * 15;
-    number = Math.ceil(number);
 }
     
 function add_key(event){
     if (protagonist.y === objective.y){
         if (protagonist.x === objective.x){
         occupants[objective.y][objective.x] = undefined;
-        objective.y = 5;
-        objective.x = 5;
+        objective.y = Math.ceil(number);
+        objective.x = Math.ceil(number);
         occupants[objective.y][objective.x] = objective.element;
         get_number();
     }
