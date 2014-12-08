@@ -100,6 +100,6 @@ function add_key(event){
 function score_update(){
     var s = 0;
     s = s + 1;
-    document.getElementById("score").innerHTML = Score: s;
+    document.getElementById("score").innerHTML = s
 }
 
