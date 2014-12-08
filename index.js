@@ -86,12 +86,12 @@ function get_number(){
 }
     
 function add_key(event){
-    if (protagonist.y === key.y){
-        if (protagonist.x === key.x){
-        objects[key.y][key.x] = undefined;
-        key.y = number;
-        key.x = number;
-        objects[key.y][key.x] = key.element;
+    if (protagonist.y === objective.y){
+        if (protagonist.x === objective.x){
+        objects[objective.y][objective.x] = undefined;
+        objective.y = number;
+        objective.x = number;
+        objects[objective.y][objective.x] = key.element;
         get_number()
     }
     }
