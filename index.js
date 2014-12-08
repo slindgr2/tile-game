@@ -92,7 +92,7 @@ function add_key(event){
         objective.y = Math.ceil(Math.random()*15);
         objective.x = Math.ceil(Math.random()*15);
         occupants[objective.y][objective.x] = objective.element;
-        document.getElementById("score").innerHTML = Score: var s + 1;
+        document.getElementById("score").innerHTML = Score: (s + 1);
     }
     }
 }
