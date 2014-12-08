@@ -79,9 +79,11 @@ function respawn_delay(){
 }    
     
 function add_key(event){
-    objects[key.y][key.x] = undefined;
-    key.y = Math.random*15;
-    key.x = Math.random*15;
-    objects[key.y][key.x] = key.element;
+    if (protagonist.y === key.y){
+        if (protagonist.x === key.x){
+        objects[key.y][key.x] = undefined;
+        key.y = Math.random*15;
+        key.x = Math.random*15;
+        objects[key.y][key.x] = key.element;
 }
 
