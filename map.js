@@ -6,7 +6,7 @@
 var row_count = 16;
 var column_count = 16;
 var terrain = [
-    [[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass]],
+    [[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass, wood], [grass], [grass],[grass], [grass], [grass], [grass]],
     [[grass], [grass], [grass, wood], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass]],
     [[grass], [grass, wood], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass]],
     [[grass], [grass], [grass], [grass],[grass], [grass, wood], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass, wood], [grass], [grass]],
@@ -14,7 +14,7 @@ var terrain = [
     [[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass, wood],[grass], [grass], [grass], [grass]],
     [[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass]],
     [[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass, wood],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass]],
-    [[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass]],
+    [[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass, wood]],
     [[grass], [grass, wood], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass]],
     [[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass]],
     [[grass], [grass], [grass], [grass],[grass], [grass], [grass], [grass],[grass], [grass], [grass, wood], [grass],[grass], [grass], [grass], [grass]],
