@@ -89,8 +89,8 @@ function add_key(event){
     if (protagonist.y === objective.y){
         if (protagonist.x === objective.x){
         occupants[objective.y][objective.x] = undefined;
-        objective.y = number;
-        objective.x = number;
+        objective.y = 5;
+        objective.x = 5;
         occupants[objective.y][objective.x] = objective.element;
         get_number();
     }
