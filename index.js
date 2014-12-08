@@ -7,6 +7,7 @@ var left_arrow_key = 37;
 var up_arrow_key = 38;
 var right_arrow_key = 39;
 var down_arrow_key = 40;
+var s = 0;
 
 function key_pressed_down(event) {
     occupants[protagonist.y][protagonist.x] = undefined;
@@ -89,6 +90,7 @@ function add_key(event){
         objective.y = Math.ceil(Math.random()*15);
         objective.x = Math.ceil(Math.random()*15);
         occupants[objective.y][objective.x] = objective.element;
+        s = s + 1;
     }
     }
 }
