@@ -92,8 +92,14 @@ function add_key(event){
         objective.y = Math.ceil(Math.random()*15);
         objective.x = Math.ceil(Math.random()*15);
         occupants[objective.y][objective.x] = objective.element;
-        document.getElementById("score").innerHTML = Score: (s + 1);
+        score_update();
     }
     }
+}
+
+function score_update(){
+    var s = 0;
+    s = s + 1;
+    document.getElementById("score").innerHTML = Score: s;
 }
 
