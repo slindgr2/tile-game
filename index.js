@@ -48,6 +48,8 @@ var bugspeed = window.setInterval(enemy_movement,550);
 function enemy_movement(event) {
     var e = 0;
     while(e < antagonists.length){
+        var y = antagonists[e].y;
+        var x = antagonists[e].x;
         occupants[antagonists[e].y][antagonists[e].x] = undefined;
          if (protagonist.x === antagonists[e].x) {
             antagonists[e].x = antagonists[e].x;
@@ -66,6 +68,11 @@ function enemy_movement(event) {
             } else {
                 antagonists[e].y = antagonists[e].y - 1;
             }
+        }
+        if (occupants[antagonists[e].y][antagonists[e].x] !== undefined){
+            antagonists[e].y = y;
+            antagonists[e].x = x;
+            
         }
         occupants[antagonists[e].y][antagonists[e].x] = antagonists[e].element;
         respawn_on_collision();
