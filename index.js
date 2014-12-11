@@ -70,9 +70,10 @@ function enemy_movement(event) {
             }
         }
         if (occupants[antagonists[e].y][antagonists[e].x] !== undefined){
-            antagonists[e].y = y;
-            antagonists[e].x = x;
-            
+            if (occupants[antagonists[e].y][antagonists[e].x] !== protagonist.element){
+                antagonists[e].y = y;
+                antagonists[e].x = x;
+            }
         }
         occupants[antagonists[e].y][antagonists[e].x] = antagonists[e].element;
         respawn_on_collision();
@@ -108,6 +109,11 @@ function add_key(event){
         occupants[objective.y][objective.x] = protagonist.element;
         objective.y = Math.ceil(Math.random()*15);
         objective.x = Math.ceil(Math.random()*15);
+        while (occupants[objective.y][objective.x] !== undefined){
+            objective.y = Math.ceil(Math.random()*15);
+            objective.x = Math.ceil(Math.random()*15);
+        }
+           
         occupants[objective.y][objective.x] = objective.element;
         score_update();
         antagonists.push({
