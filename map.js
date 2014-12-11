@@ -46,11 +46,11 @@ var protagonist = {
     x: 2,
     y: 2,
 };
-var antagonist = {
+var antagonists = [{
     element: enemy_bug,
     x: 10,
     y: 15,
-};
+}];
 var objective = {
     element: key,
     x: 1,
