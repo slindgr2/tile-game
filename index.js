@@ -44,40 +44,49 @@ function key_pressed_down(event) {
 
 document.addEventListener('keydown', key_pressed_down);
 var bugspeed = window.setInterval(enemy_movement,450);
+
 function enemy_movement(event) {
-    occupants[antagonist.y][antagonist.x] = undefined;
-    if (protagonist.x === antagonist.x) {
-        antagonist.x = antagonist.x;
-    } else {
-        if (protagonist.x > antagonist.x) {
-            antagonist.x = antagonist.x + 1;
+    var e = 0;
+    while(e < antagonists.length){
+        occupants[antagonists[e].y][antagonists[e].x] = undefined;
+         if (protagonist.x === antagonists[e].x) {
+            antagonists[e].x = antagonists[e].x;
         } else {
-            antagonist.x = antagonist.x - 1;
+            if (protagonist.x > antagonists[e].x) {
+                antagonists[e].x = antagonists[e].x + 1;
+            } else {
+                antagonists[e].x = antagonists[e].x - 1;
+            }
         }
-    }
-    if (protagonist.y === antagonist.y) {
-        antagonist.y = antagonist.y;
-    } else {
-        if (protagonist.y > antagonist.y) {
-            antagonist.y = antagonist.y + 1;
+        if (protagonist.y === antagonists[e].y) {
+            antagonists[e].y = antagonists[e].y;
         } else {
-            antagonist.y = antagonist.y - 1;
+            if (protagonist.y > antagonists[e].y) {
+                antagonists[e].y = antagonists[e].y + 1;
+            } else {
+                antagonists[e].y = antagonists[e].y - 1;
+            }
         }
+        occupants[antagonists[e].y][antagonists[e].x] = antagonists[e].element;
+        respawn_on_collision();
+        e = e + 1;
     }
-    occupants[antagonist.y][antagonist.x] = antagonist.element;
-    respawn_on_collision();
 }
 function respawn_on_collision(event){
-    if (protagonist.y === antagonist.y){
-        if (protagonist.x === antagonist.x){
-            occupants[protagonist.y][protagonist.x] = antagonist.element;
-            protagonist.y = 7;
-            protagonist.x = 7;
-            occupants[protagonist.y][protagonist.x] = protagonist.element;
-            window.clearInterval(bugspeed);
-            window.setTimeout(respawn_delay,3500);
-            number_of_lives();
+    var e = 0;
+    while (e < antagonists.length){
+        if (protagonist.y === antagonists[e].y){
+            if (protagonist.x === antagonists[e].x){
+                occupants[protagonist.y][protagonist.x] = antagonists[e].element;
+                protagonist.y = 7;
+                protagonist.x = 7;
+                occupants[protagonist.y][protagonist.x] = protagonist.element;
+                window.clearInterval(bugspeed);
+                window.setTimeout(respawn_delay,3500);
+                number_of_lives();
+            }    
         }
+        e = e + 1;
     }
 }
 
@@ -94,6 +103,12 @@ function add_key(event){
         objective.x = Math.ceil(Math.random()*15);
         occupants[objective.y][objective.x] = objective.element;
         score_update();
+        antagonists.push({
+        element: enemy_bug,
+        x: 15,
+        y: 15,
+});
+        occupants[antagonists[antagonists.length - 1].y][antagonists[antagonists.length - 1].x] = antagonists[antagonists.length - 1].element;
     }
     }
 }
@@ -110,3 +125,4 @@ function number_of_lives(){
      alert('Game Over! You Suck!\nScore: '+s);
  }
  }
+
