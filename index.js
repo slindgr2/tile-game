@@ -93,7 +93,7 @@ function respawn_on_collision(event){
 
 
 function respawn_delay(){
-    bugspeed = window.setInterval(enemy_movement,450);
+    bugspeed = window.setInterval(enemy_movement,600);
 }    
 function add_key(event){
     if (protagonist.y === objective.y){
