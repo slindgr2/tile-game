@@ -43,7 +43,7 @@ function key_pressed_down(event) {
 }
 
 document.addEventListener('keydown', key_pressed_down);
-var bugspeed = window.setInterval(enemy_movement,450);
+var bugspeed = window.setInterval(enemy_movement,550);
 
 function enemy_movement(event) {
     var e = 0;
